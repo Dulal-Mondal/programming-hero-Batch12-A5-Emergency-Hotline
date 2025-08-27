@@ -17,7 +17,7 @@ const serviceCalls = document.getElementsByClassName('call-btn');
 const serviceNames = document.getElementsByClassName('service-name');
 const serviceNumbers = document.getElementsByClassName('service-number');
 const coinCount = document.getElementById('coins');
-const callHistory = document.getElementById('call-history');
+const callHistory = document.getElementById('call-history-card');
 const serviceTitles = document.getElementsByClassName('service-title');
 
 for (let i = 0; i < serviceCalls.length; i++) {
@@ -55,7 +55,7 @@ for (let i = 0; i < serviceCalls.length; i++) {
 
         callHistory.appendChild(newCallCard);
 
-        alert(" Calling " + name + "  " + number);
+        alert("📞 Calling " + name + "  " + number);
     });
 }
 
@@ -66,5 +66,29 @@ const historyClearBtn = document.getElementById('clear-btn')
         const callHistory = document.getElementById('call-history-card');
         callHistory.innerHTML = "";
     })
+
+// code for copy button
+
+
+const copy = document.getElementById('copy-numbers');
+const copyButtons = document.getElementsByClassName('copy-btn');
+let copyCount = 0;
+
+
+for (let i = 0; i < copyButtons.length; i++) {
+    copyButtons[i].addEventListener('click', function () {
+        copyCount++;
+        copy.textContent = copyCount;
+
+
+        const number = serviceNumbers[i].innerText;
+
+        navigator.clipboard.writeText(number);
+
+        alert(`Copied: ${number}`);
+    });
+}
+
+
 
 
