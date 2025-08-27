@@ -55,6 +55,16 @@ for (let i = 0; i < serviceCalls.length; i++) {
 
         callHistory.appendChild(newCallCard);
 
-        alert("Calling " + name + "  " + number);
+        alert(" Calling " + name + "  " + number);
     });
 }
+
+// code for call history clear
+
+const historyClearBtn = document.getElementById('clear-btn')
+    .addEventListener('click', function () {
+        const callHistory = document.getElementById('call-history-card');
+        callHistory.innerHTML = "";
+    })
+
+
