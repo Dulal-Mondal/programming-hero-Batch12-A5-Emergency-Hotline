@@ -18,27 +18,29 @@
     <section class="hero-section   shadow-xl shadow-[#B5B5B5]/25">
 
         <!-- nav section -->
-        <nav class="flex justify-between items-center mx-1 md:mx-12  py-4 ">
+        <nav class="flex justify-between items-center mx-1 sm:mx-12  py-4 ">
             <div class="site-logo flex items-center gap-2">
                 <img src="./assets/logo.png" alt="" class="w-14 h-14">
                 <h2 class=" font-bold text-[#006747]">Emergency
                     <br> Service
                 </h2>
             </div>
-            <div class="flex items-center justify-between gap-2 md:gap-5 ">
-                <div class="flex gap-2 items-center bg-[#41FF6B]/10 rounded-[20px] py-[10px] px-[20px] ">
+            <div class="flex items-center justify-between gap-2 sm:gap-5 ">
+                <div
+                    class="flex gap-2 items-center bg-[#41FF6B]/10 rounded-[20px] py-[8px] sm:py-[10px] px-[16px] sm:px-[20px] ">
                     <h4 id="heart-icon">0</h4>
                     <i class="fa-solid fa-heart text-[#ED1C24]"></i>
 
                 </div>
 
-                <div class="flex gap-2  items-center  bg-[#41FF6B]/10 rounded-[20px]  py-[10px] px-[16px]">
+                <div
+                    class="flex gap-2  items-center  bg-[#41FF6B]/10 rounded-[20px] py-[8px] sm:py-[10px] px-[10px] sm:px-[16px]">
                     <h4 id="coins">100</h4>
                     <img src="./assets/coin.png" alt="" class="h-5 w-5">
 
                 </div>
                 <div
-                    class="hidden md:flex gap-2 items-center bg-[#00A63E] rounded-[20px] py-[10px] px-[16px] text-white">
+                    class=" flex gap-2 items-center bg-[#00A63E] rounded-[20px] py-[8px] sm:py-[10px] px-[10px] sm:px-[16px] text-white">
                     <h4 id="copy-numbers">0</h4>
                     <p>Copy</p>
                 </div>
@@ -53,7 +55,7 @@
         class="bg-gradient-to-r from-[#013626] via-[#015d41] to-[#013626] flex flex-col items-center py-[20px] text-white">
         <img src="./assets/logo.png" alt="" class="w-20 h-20">
         <h1 class="font-bold text-2xl">Emergency Service Directory</h1>
-        <p class="md:text-[16px] text-center">Government Emergency Services at Your Fingertip - A Project by Government
+        <p class="sm:text-[16px] text-center">Government Emergency Services at Your Fingertip - A Project by Government
             of the
             People's Republic of
             Bangladesh</p>
@@ -61,12 +63,11 @@
 
     <!-- service section -->
 
-    <section class=" flex flex-col justify-between gap-3 md:flex-row mx-12">
+    <section class=" grid grid-cols-1 sm:grid-cols-4 gap-y-3 sm:gap-3 pt-10  px-12 bg-[#f5fff6]">
 
-        <!-- service section -->
-        <div
-            class="service-card-section grid  grid-cols-1 md:grid-cols-3 gap-3 md:my-7 w-full sm:w-[90%] md:w-[73%] mx-auto">
-            <div class="bg-white rounded-2xl shadow-md px-3 py-5 ">
+        <!-- service card -->
+        <div class="service-card-section grid  grid-cols-1 col-span-3    sm:grid-cols-3 gap-4     ">
+            <div class="bg-white  rounded-2xl shadow-sm px-3 py-5 ">
 
                 <div class="">
                     <div class="flex justify-between items-center ">
@@ -89,8 +90,8 @@
                         class="copy-btn flex-1 border border-gray-300 py-2 rounded-lg flex items-center justify-center gap-2 text-gray-600">
                         <i class="fa-regular fa-copy"></i> Copy
                     </button>
-                    <button
-                        class="call-btn flex-1 bg-green-600 text-white py-2 rounded-lg flex items-center justify-center gap-2">
+                    <button class="call-btn flex-1 bg-green-600 hover:bg-transparent hover:border-1 hover:border-black hover:text-black
+                 text-white py-2 rounded-lg flex items-center justify-center gap-2">
                         <i class="fa-solid fa-phone"></i> Call
                     </button>
                 </div>
@@ -338,10 +339,10 @@
         </div>
 
 
-        <!-- call history section -->
-        <div id="call-history" class="call-history-section bg-white rounded-2xl shadow-md 
-            w-full sm:w-[90%] md:w-[27%] 
-            p-4 my-7 mx-auto">
+        <!-- call history -->
+        <div id="call-history" class="call-history-section row-span-3 bg-white rounded-2xl w-full sm:row-span-3 p-[18px] sm:p-[20px] shadow-md 
+           
+             ">
             <div class="flex  justify-between items-center">
                 <h3>
                     <i class="fa-regular fa-clock"></i> Call History
@@ -352,49 +353,11 @@
             </div>
 
             <div id="call-history-card">
-                <div class="flex justify-between items-center bg-[#FAFAFA] rounded-[8px] p-[14px] my-[30px]">
-                    <div>
-                        <h3 class="font-semibold text-[14px]">Fire Service Number</h3>
-                        <h2 class="text-1xl  mb-1">999</h2>
-                    </div>
-                    <data class="text-[12px]" value="">11:36:58 AM</data>
-                </div>
 
-                <div class="flex justify-between items-center bg-[#FAFAFA] rounded-[8px] p-[14px] my-[30px]">
-                    <div>
-                        <h3 class="font-semibold text-[14px]">National Emergency Number</h3>
-                        <h2 class="text-1xl  mb-1">1994-999999</h2>
-                    </div>
-                    <data class="text-[12px]" value="">11:36:58 AM</data>
 
-                </div>
 
-                <div class="flex justify-between items-center bg-[#FAFAFA] rounded-[8px] p-[14px] my-[30px]">
-                    <div>
-                        <h3 class="font-semibold text-[14px]">Bangladesh Railway Helpline </h3>
-                        <h2 class="text-1xl  mb-1">999</h2>
-                    </div>
-                    <data class="text-[12px]" value="">11:36:58 AM</data>
 
-                </div>
 
-                <div class="flex justify-between items-center bg-[#FAFAFA] rounded-[8px] p-[14px] my-[30px]">
-                    <div>
-                        <h3 class="font-semibold text-[14px]">Fire Service Number</h3>
-                        <h2 class="text-1xl  mb-1">999</h2>
-                    </div>
-                    <data class="text-[12px]" value="">11:36:58 AM</data>
-
-                </div>
-
-                <div class="flex justify-between items-center bg-[#FAFAFA] rounded-[8px] p-[14px] my-[30px]">
-                    <div>
-                        <h3 class="font-semibold text-[14px]">Fire Service Number</h3>
-                        <h2 class="text-1xl  mb-1">999</h2>
-                    </div>
-                    <data class="text-[12px]" value="">11:36:58 AM</data>
-
-                </div>
             </div>
         </div>
     </section>

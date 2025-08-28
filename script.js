@@ -49,7 +49,7 @@ for (let i = 0; i < serviceCalls.length; i++) {
                 <h3 class="font-semibold text-[14px]">${serviceTitle}</h3>
                 <h2 class="text-1xl mb-1">${number}</h2>
             </div>
-            <data class="text-[12px]" value="${time}">${time}</data>
+            <h1 class="text-[12px]">${time}</h1>
         `;
 
 
