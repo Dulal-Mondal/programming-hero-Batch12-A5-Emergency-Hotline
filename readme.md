@@ -5,29 +5,29 @@
 
   Answer:getElementById(id): Selects a single element by its unique id attribute.
   Returns a single Element object or null if no element with the specified ID is found.As "id" is unique in the overall document, so it will select a specific element. In example : 
-  <!-- <h1 id="title">Hello</h1> -->
+  <h1 id="title"></h1>
   Then, document.getElementById("title") .
 
 
   getElementsByClassName(className): Selects all elements that share a specific class name.Returns a "live" HTML Collection of elements.
   If we select elements by the class name, we dont get single element rather than we get a list of elements.In example : 
-  <!-- <p class="text">One</p>
-  <p class="text">Two</p> -->
+  <p class="text"></p>
+  <p class="text"></p>
   Then document.getElementsByClassName("text").
 
 
   querySelector(selector): Selects the first element that matches a given CSS selector such as #id, .class, tag, attribute or combinations.Returns a single Element object or null.Example:
-     " <h1 id="title">Welcome</h1>
-      <p class="text">This is the first paragraph.</p>
-      <p class="text">This is the second paragraph.</p>"
+      <h1 id="title"></h1>
+      <p class="text"></p>
+      <p class="text"></p>
 
       document.querySelector(".text");
 
 
   querySelectorAll(selector): It is almost same as querySelector but the main difference between them is that querySelector gives only the first matching element and querySelectorAll gives all matching elements as an nodeList. Example :
-      <!-- <h1 id="title">Welcome</h1>
-      <p class="text">This is the first paragraph.</p>
-      <p class="text">This is the second paragraph.</p> -->
+      <h1 id="title"></h1>
+      <p class="text"></p>
+      <p class="text"></p>
       
       document.querySelectorAll(".text");
 
