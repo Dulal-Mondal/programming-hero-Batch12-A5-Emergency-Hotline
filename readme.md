@@ -17,9 +17,9 @@
 
 
   querySelector(selector): Selects the first element that matches a given CSS selector such as #id, .class, tag, attribute or combinations.Returns a single Element object or null.Example:
-      <!-- <h1 id="title">Welcome</h1>
+     " <h1 id="title">Welcome</h1>
       <p class="text">This is the first paragraph.</p>
-      <p class="text">This is the second paragraph.</p> -->
+      <p class="text">This is the second paragraph.</p>"
 
       document.querySelector(".text");
 
