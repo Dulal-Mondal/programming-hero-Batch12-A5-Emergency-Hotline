@@ -80,12 +80,12 @@ for (let i = 0; i < copyButtons.length; i++) {
         copyCount++;
         copy.textContent = copyCount;
 
-
+        const name = serviceNames[i].innerText;
         const number = serviceNumbers[i].innerText;
 
         navigator.clipboard.writeText(number);
 
-        alert(`Copied: ${number}`);
+        alert(`Copied:The number of ${name} - ${number}`);
     });
 }
 
